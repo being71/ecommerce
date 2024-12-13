@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "55408493936",
+    "project_id": "tokomu-ecee9",
+    "storage_bucket": "tokomu-ecee9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55408493936:android:069e542b1288d5c7bb7bb5",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-SXHkI5qyhj5nzY0lm3eZcMClvfnWkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55408493936:android:ef1913f7dad895ffbb7bb5",
+        "android_client_info": {
+          "package_name": "com.example.shopping_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-SXHkI5qyhj5nzY0lm3eZcMClvfnWkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55408493936:android:2960fea69090e46fbb7bb5",
+        "android_client_info": {
+          "package_name": "com.example.shpooing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-SXHkI5qyhj5nzY0lm3eZcMClvfnWkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
