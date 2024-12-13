@@ -18,7 +18,6 @@ class DetailPage extends StatelessWidget {
         .snapshots(); // This returns a stream of the product document
   }
 
-  // Function to add product to the cart
   Future<void> addToCart(BuildContext context, Product product) async {
     String userId = FirebaseAuth.instance.currentUser!.uid;
 
@@ -26,7 +25,7 @@ class DetailPage extends StatelessWidget {
     DocumentReference transactionRef =
         FirebaseFirestore.instance.collection('transactions').doc(userId);
 
-// Get the current transaction data
+    // Get the current transaction data
     DocumentSnapshot transactionSnapshot = await transactionRef.get();
 
     if (transactionSnapshot.exists) {
@@ -39,8 +38,15 @@ class DetailPage extends StatelessWidget {
         await transactionRef.update({
           'items': [],
           'totalAmount': 0.0,
-          'paymentStatus': 'Pending',
+          'paymentStatus': 'Pending', // Reset payment status to Pending
         });
+
+        // After updating, re-fetch the transaction document to ensure the update was successful
+        transactionSnapshot = await transactionRef.get();
+        transactionData = transactionSnapshot.data() as Map<String, dynamic>;
+
+        // Now we can safely update items, as we know the list is cleared
+        print("Transaction cleared, ready for new items.");
       }
 
       // Update existing transaction
