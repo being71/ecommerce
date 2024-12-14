@@ -126,7 +126,7 @@ class Daftar extends StatelessWidget {
                 ),
                 child: const Text(
                   'Daftar',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ],
